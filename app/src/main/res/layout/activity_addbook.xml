@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+    android:orientation="vertical"
+    app:layout_goneMarginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="ADD BOOK"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:background="@drawable/button"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_icon"
+            android:padding="10dp"
+            android:drawablePadding="20dp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/book_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Author Name"
+            android:background="@drawable/button"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_name"
+            android:padding="10dp"
+            android:drawablePadding="20dp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/ebook_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Publisher"
+            android:background="@drawable/button"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_name"
+            android:padding="10dp"
+            android:drawablePadding="20dp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/book_publish_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:hint="Publication Date"
+            android:inputType="text"
+
+            android:drawablePadding="20dp"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/book_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:ems="10"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/ic_barcode"
+            android:hint="ISBN"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/book_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:text="SUBMIT"
+            />
+
+    </LinearLayout>
+</LinearLayout>
